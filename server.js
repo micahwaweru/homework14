@@ -22,8 +22,8 @@ const sess = {
 app.use(session(sess));
 
 const hbs = exphbs.create({
-    helpers:{
-        formate_date: date=>{
+    helpers: {
+        format_date: date=>{
             return `${date.getMonth() + 1}/${date.getDate()}/${date.getFullYear()}`;
         }
     }
